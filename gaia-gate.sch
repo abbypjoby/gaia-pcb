@@ -1,0 +1,424 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7400 7500 0    50   ~ 0
+Designed By : Abby P Joby
+$Comp
+L Device:Crystal Y1
+U 1 1 5E5A999C
+P 7800 2200
+F 0 "Y1" V 7754 2331 50  0000 L CNN
+F 1 "Crystal" V 7845 2331 50  0000 L CNN
+F 2 "Crystal:Crystal_HC18-U_Vertical" H 7800 2200 50  0001 C CNN
+F 3 "~" H 7800 2200 50  0001 C CNN
+	1    7800 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5E5AAA32
+P 8150 2450
+F 0 "C2" H 8265 2496 50  0000 L CNN
+F 1 "C" H 8265 2405 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8188 2300 50  0001 C CNN
+F 3 "~" H 8150 2450 50  0001 C CNN
+	1    8150 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5E5AD971
+P 8150 1900
+F 0 "C1" H 8265 1946 50  0000 L CNN
+F 1 "C" H 8265 1855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8188 1750 50  0001 C CNN
+F 3 "~" H 8150 1900 50  0001 C CNN
+	1    8150 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 2450 7800 2450
+Wire Wire Line
+	7800 2450 7800 2350
+Wire Wire Line
+	8000 1900 7800 1900
+Wire Wire Line
+	7800 1900 7800 2050
+Wire Wire Line
+	7450 2450 7800 2450
+Connection ~ 7800 2450
+Wire Wire Line
+	7450 2100 7450 1900
+Wire Wire Line
+	7450 1900 7800 1900
+Connection ~ 7800 1900
+Wire Wire Line
+	8300 2450 8550 2450
+Wire Wire Line
+	8550 2450 8550 1900
+Wire Wire Line
+	8550 1900 8300 1900
+$Comp
+L power:GND #PWR09
+U 1 1 5E5B71A1
+P 8550 2550
+F 0 "#PWR09" H 8550 2300 50  0001 C CNN
+F 1 "GND" H 8555 2377 50  0000 C CNN
+F 2 "" H 8550 2550 50  0001 C CNN
+F 3 "" H 8550 2550 50  0001 C CNN
+	1    8550 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 2550 8550 2450
+$Comp
+L power:+5V #PWR03
+U 1 1 5E5BC60B
+P 5300 1100
+F 0 "#PWR03" H 5300 950 50  0001 C CNN
+F 1 "+5V" H 5315 1273 50  0000 C CNN
+F 2 "" H 5300 1100 50  0001 C CNN
+F 3 "" H 5300 1100 50  0001 C CNN
+	1    5300 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pcb_power_supply:Vcc_one_supply U1
+U 1 1 5E5CD38C
+P 3200 1550
+F 0 "U1" H 3325 1965 50  0000 C CNN
+F 1 "Vcc_one_supply" H 3325 1874 50  0000 C CNN
+F 2 "gaia-gate:VREG_230Vac_to_5Vdc" H 3300 1950 50  0001 C CNN
+F 3 "" H 3300 1950 50  0001 C CNN
+	1    3200 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5E5CF367
+P 4050 1400
+F 0 "#PWR01" H 4050 1250 50  0001 C CNN
+F 1 "+5V" H 4065 1573 50  0000 C CNN
+F 2 "" H 4050 1400 50  0001 C CNN
+F 3 "" H 4050 1400 50  0001 C CNN
+	1    4050 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E5D11DF
+P 4050 1850
+F 0 "#PWR02" H 4050 1600 50  0001 C CNN
+F 1 "GND" H 4055 1677 50  0000 C CNN
+F 2 "" H 4050 1850 50  0001 C CNN
+F 3 "" H 4050 1850 50  0001 C CNN
+	1    4050 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1850 4050 1800
+Wire Wire Line
+	3850 1800 4050 1800
+Wire Wire Line
+	4050 1400 3850 1400
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5E5D4973
+P 2300 1550
+F 0 "J1" H 2272 1432 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 2272 1523 50  0000 R CNN
+F 2 "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal" H 2300 1550 50  0001 C CNN
+F 3 "~" H 2300 1550 50  0001 C CNN
+	1    2300 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1650 2800 1650
+$Comp
+L power:GND #PWR04
+U 1 1 5E5EB58E
+P 5300 4650
+F 0 "#PWR04" H 5300 4400 50  0001 C CNN
+F 1 "GND" H 5305 4477 50  0000 C CNN
+F 2 "" H 5300 4650 50  0001 C CNN
+F 3 "" H 5300 4650 50  0001 C CNN
+	1    5300 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 4200 5300 4650
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-PU U2
+U 1 1 5E605A74
+P 5300 2700
+F 0 "U2" H 4656 2746 50  0000 R CNN
+F 1 "ATmega328P-PU" H 4656 2655 50  0000 R CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 5300 2700 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 5300 2700 50  0001 C CNN
+	1    5300 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 8550 2450
+Wire Wire Line
+	7450 2200 7450 2450
+Wire Wire Line
+	5300 1100 5300 1200
+Wire Wire Line
+	5900 2100 7450 2100
+Wire Wire Line
+	5900 2200 7450 2200
+Wire Wire Line
+	6300 2000 6450 2000
+Wire Wire Line
+	6300 1500 6450 1500
+$Comp
+L power:GND #PWR06
+U 1 1 5E67D603
+P 6300 2000
+F 0 "#PWR06" H 6300 1750 50  0001 C CNN
+F 1 "GND" H 6305 1827 50  0000 C CNN
+F 2 "" H 6300 2000 50  0001 C CNN
+F 3 "" H 6300 2000 50  0001 C CNN
+	1    6300 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR05
+U 1 1 5E67B365
+P 6300 1500
+F 0 "#PWR05" H 6300 1350 50  0001 C CNN
+F 1 "+5V" H 6315 1673 50  0000 C CNN
+F 2 "" H 6300 1500 50  0001 C CNN
+F 3 "" H 6300 1500 50  0001 C CNN
+	1    6300 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 1900 6450 1900
+Wire Wire Line
+	6450 1800 5900 1800
+Wire Wire Line
+	5900 1700 6450 1700
+Wire Wire Line
+	6450 1600 5900 1600
+$Comp
+L Connector:Conn_01x06_Male J2
+U 1 1 5E6731AD
+P 6650 1800
+F 0 "J2" H 6622 1682 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 6622 1773 50  0000 R CNN
+F 2 "Connector_JST:JST_EH_S6B-EH_1x06_P2.50mm_Horizontal" H 6650 1800 50  0001 C CNN
+F 3 "~" H 6650 1800 50  0001 C CNN
+	1    6650 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5E6A72D6
+P 6900 3950
+F 0 "J3" H 6980 3992 50  0000 L CNN
+F 1 "Conn_01x03" H 6980 3901 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal" H 6900 3950 50  0001 C CNN
+F 3 "~" H 6900 3950 50  0001 C CNN
+	1    6900 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3850 6700 3800
+Wire Wire Line
+	6700 3800 6300 3800
+Wire Wire Line
+	6700 4050 6300 4050
+Wire Wire Line
+	5900 4050 5900 3900
+$Comp
+L power:+5V #PWR07
+U 1 1 5E6C8967
+P 6600 3950
+F 0 "#PWR07" H 6600 3800 50  0001 C CNN
+F 1 "+5V" H 6615 4123 50  0000 C CNN
+F 2 "" H 6600 3950 50  0001 C CNN
+F 3 "" H 6600 3950 50  0001 C CNN
+	1    6600 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 3950 6700 3950
+$Comp
+L Device:R R1
+U 1 1 5E6C9893
+P 6300 3550
+F 0 "R1" H 6370 3596 50  0000 L CNN
+F 1 "100K" H 6370 3505 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6230 3550 50  0001 C CNN
+F 3 "~" H 6300 3550 50  0001 C CNN
+	1    6300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E6CBE48
+P 6300 4300
+F 0 "R2" H 6370 4346 50  0000 L CNN
+F 1 "100K" H 6370 4255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6230 4300 50  0001 C CNN
+F 3 "~" H 6300 4300 50  0001 C CNN
+	1    6300 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3700 6300 3800
+Connection ~ 6300 3800
+Wire Wire Line
+	6300 3800 5900 3800
+Wire Wire Line
+	6300 4050 6300 4150
+Connection ~ 6300 4050
+Wire Wire Line
+	6300 4050 5900 4050
+Wire Wire Line
+	6300 3400 7650 3400
+Wire Wire Line
+	7650 3400 7650 4450
+$Comp
+L power:GND #PWR08
+U 1 1 5E6CF5B9
+P 7800 4500
+F 0 "#PWR08" H 7800 4250 50  0001 C CNN
+F 1 "GND" H 7805 4327 50  0000 C CNN
+F 2 "" H 7800 4500 50  0001 C CNN
+F 3 "" H 7800 4500 50  0001 C CNN
+	1    7800 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4500 7800 4450
+Wire Wire Line
+	6300 4450 7650 4450
+Connection ~ 7650 4450
+Wire Wire Line
+	7650 4450 7800 4450
+Wire Wire Line
+	5900 2800 6450 2800
+Wire Wire Line
+	6450 2700 5900 2700
+Wire Wire Line
+	5900 2600 6450 2600
+Wire Wire Line
+	6450 2500 5900 2500
+$Comp
+L Connector:Conn_01x06_Male J4
+U 1 1 5E6E9CA3
+P 6650 2700
+F 0 "J4" H 6622 2582 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 6622 2673 50  0000 R CNN
+F 2 "Connector_JST:JST_EH_S6B-EH_1x06_P2.50mm_Horizontal" H 6650 2700 50  0001 C CNN
+F 3 "~" H 6650 2700 50  0001 C CNN
+	1    6650 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5900 2400 6450 2400
+Wire Wire Line
+	5900 2900 6450 2900
+$Comp
+L Connector:Conn_01x02_Male J5
+U 1 1 5E6F3583
+P 2300 2200
+F 0 "J5" H 2272 2082 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 2272 2173 50  0000 R CNN
+F 2 "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal" H 2300 2200 50  0001 C CNN
+F 3 "~" H 2300 2200 50  0001 C CNN
+	1    2300 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1550 2500 1500
+Wire Wire Line
+	2500 1500 2800 1500
+Wire Wire Line
+	2500 2200 2500 2150
+Wire Wire Line
+	2500 2150 1450 2150
+Wire Wire Line
+	1450 2150 1450 1300
+Wire Wire Line
+	1450 1300 2500 1300
+Wire Wire Line
+	2500 1300 2500 1500
+Connection ~ 2500 1500
+Connection ~ 2800 1650
+Wire Wire Line
+	2800 2300 2800 1650
+Wire Wire Line
+	2500 2300 2800 2300
+$Comp
+L Device:CP C3
+U 1 1 5E63EE00
+P 4050 1600
+F 0 "C3" H 4168 1646 50  0000 L CNN
+F 1 "CP" H 4168 1555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4088 1450 50  0001 C CNN
+F 3 "~" H 4050 1600 50  0001 C CNN
+	1    4050 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1750 4050 1800
+Connection ~ 4050 1800
+Wire Wire Line
+	4050 1450 4050 1400
+Connection ~ 4050 1400
+Wire Wire Line
+	9800 3850 9800 3500
+Wire Wire Line
+	9200 3500 9800 3500
+$Comp
+L power:GND #PWR010
+U 1 1 5E622248
+P 9800 3850
+F 0 "#PWR010" H 9800 3600 50  0001 C CNN
+F 1 "GND" H 9805 3677 50  0000 C CNN
+F 2 "" H 9800 3850 50  0001 C CNN
+F 3 "" H 9800 3850 50  0001 C CNN
+	1    9800 3850
+	1    0    0    -1  
+$EndComp
+Connection ~ 9200 3500
+Wire Wire Line
+	9200 3500 9200 3900
+$Comp
+L Connector:Conn_01x01_Male J7
+U 1 1 5E60F921
+P 9000 3900
+F 0 "J7" H 9108 4081 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 9108 3990 50  0000 C CNN
+F 2 "Connector:Banana_Jack_1Pin" H 9000 3900 50  0001 C CNN
+F 3 "~" H 9000 3900 50  0001 C CNN
+	1    9000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J6
+U 1 1 5E60C7F4
+P 9000 3500
+F 0 "J6" H 9108 3681 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 9108 3590 50  0000 C CNN
+F 2 "Connector:Banana_Jack_1Pin" H 9000 3500 50  0001 C CNN
+F 3 "~" H 9000 3500 50  0001 C CNN
+	1    9000 3500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
