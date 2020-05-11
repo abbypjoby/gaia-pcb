@@ -16,7 +16,8 @@ The complete series - https://www.youtube.com/watch?v=c2niS9ZRBHo&list=RDCMUCclJ
 
 
 ## Creating a New Component
-tools -> symbol library editor <br>
+- tools 
+- symbol library editor <br>
 - file create new Library <br>
 - create new component (button) <br>
 - select required newly created library (new component is added here) <br>
