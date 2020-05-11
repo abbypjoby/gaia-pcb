@@ -17,9 +17,10 @@ The complete series - https://www.youtube.com/watch?v=c2niS9ZRBHo&list=RDCMUCclJ
 
 ## Creating a New Component
 - tools 
-- symbol library editor <br>
-- file create new Library <br>
-- create new component (button) <br>
-- select required newly created library (new component is added here) <br>
-- give new component name <br>
-- save it, now create the symbol <br>
+- symbol library editor 
+- file create new Library 
+- create new component (button) 
+- select required newly created library (new component is added here) 
+- give new component name 
+- save it, now create the symbol 
+- click pin button, add all the pins with proper name and numbers
