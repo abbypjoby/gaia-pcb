@@ -1,0 +1,18 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 2pin_connector
+#
+DEF 2pin_connector J 0 40 Y Y 1 F N
+F0 "J" -100 200 50 H V C CNN
+F1 "2pin_connector" 0 -200 50 H V C CNN
+F2 "" -275 -100 50 H I C CNN
+F3 "" -275 -100 50 H I C CNN
+DRAW
+S 125 -150 -125 150 0 1 0 N
+X Pin1 1 -225 50 100 R 50 50 1 1 I
+X Pin2 2 -225 -50 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

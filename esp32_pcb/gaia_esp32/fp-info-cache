@@ -1,4 +1,4 @@
-16931654913958254
+16936423240441819
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75257,37 +75257,58 @@ varistor SIOV
 2
 2
 gaia-gate
+NodeMCU
+Through-hole-mounted NodeMCU 0.9
+nodemcu
+0
+30
+30
+gaia_gate
 2pin_connector
 
 
 0
 0
 0
-gaia-gate
+gaia_gate
 230_5V_supply_HiLink
 
 
 0
 4
 4
-gaia-gate
+gaia_gate
 Fuse
 https://www.tme.eu/en/Document/3b48dbe2b9714a62652c97b08fcd464b/PTF78.pdf
 Fuseholder horizontal open 5x20 Stelvio-Kontek PTF/78
 0
 2
 2
-gaia-gate
+gaia_gate
 VREG_230Vac_to_5Vdc
 
 
 0
 4
 4
-gaia-gate
+gaia_gate
 resistor
 Resistor, Axial_DIN0411 series, Axial, Horizontal, pin pitch=12.7mm, 1W, length*diameter=9.9*3.6mm^2
 Resistor Axial_DIN0411 series Axial Horizontal pin pitch 12.7mm 1W length 9.9mm diameter 3.6mm
 0
 2
 2
+nodeMCU
+NodeMCU_0.9
+Through-hole-mounted NodeMCU 0.9
+nodemcu
+0
+30
+30
+nodeMCU
+NodeMCU_Amica_R2
+Through-hole-mounted NodeMCU 0.9
+nodemcu
+0
+30
+30

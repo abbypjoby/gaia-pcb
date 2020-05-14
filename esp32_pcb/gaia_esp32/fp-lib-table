@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name nodeMCU)(type KiCad)(uri /home/abby/Projects/gate/gaia-pcb_v2/esp32_pcb/library/kicad-lib/nodemcu.pretty)(options "")(descr ""))
+  (lib (name gaia_gate)(type KiCad)(uri /home/abby/Projects/gate/gaia-pcb_v2/gaia-gate.pretty)(options "")(descr ""))
+)
