@@ -25,7 +25,7 @@ F 3 "" H 6075 3625 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L gaia_gate:pcb_power_supply_Vcc_one_supply U1
+L gaia_esp32-rescue:pcb_power_supply_Vcc_one_supply-gaia_gate U1
 U 1 1 5EC01B18
 P 2700 5575
 F 0 "U1" H 2825 5990 50  0000 C CNN
@@ -63,157 +63,71 @@ U 1 1 5EC0EB12
 P 6825 4025
 F 0 "J3" H 6905 4067 50  0000 L CNN
 F 1 "Conn_01x03" H 6905 3976 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-396_A-41791-0003_1x03_P3.96mm_Vertical" H 6825 4025 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 6825 4025 50  0001 C CNN
 F 3 "~" H 6825 4025 50  0001 C CNN
 	1    6825 4025
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J4
-U 1 1 5EC11972
-P 7100 2975
-F 0 "J4" H 7200 3000 50  0000 C CNN
-F 1 "Switch1" H 7300 2875 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical" H 7100 2975 50  0001 C CNN
-F 3 "~" H 7100 2975 50  0001 C CNN
-	1    7100 2975
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J5
-U 1 1 5EC11D91
-P 7100 3275
-F 0 "J5" H 7200 3275 50  0000 C CNN
-F 1 "Switch2" H 7300 3175 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical" H 7100 3275 50  0001 C CNN
-F 3 "~" H 7100 3275 50  0001 C CNN
-	1    7100 3275
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6900 3375 6775 3375
-Wire Wire Line
-	6775 3375 6775 3425
-Wire Wire Line
-	6525 3075 6525 3325
-Wire Wire Line
-	6525 3325 6275 3325
-$Comp
 L Device:R R6
 U 1 1 5EC18746
-P 7725 3775
-F 0 "R6" V 7518 3775 50  0000 C CNN
-F 1 "10K" V 7609 3775 50  0000 C CNN
-F 2 "gaia_gate:resistor" V 7655 3775 50  0001 C CNN
-F 3 "~" H 7725 3775 50  0001 C CNN
-	1    7725 3775
+P 7350 3700
+F 0 "R6" V 7143 3700 50  0000 C CNN
+F 1 "10K" V 7234 3700 50  0000 C CNN
+F 2 "gaia_gate:resistor" V 7280 3700 50  0001 C CNN
+F 3 "~" H 7350 3700 50  0001 C CNN
+	1    7350 3700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6525 3700 6525 3525
+	7500 3100 7500 3400
 Wire Wire Line
-	6525 3525 6275 3525
-Wire Wire Line
-	7875 2775 7875 3275
-Wire Wire Line
-	7875 3275 7875 3775
-Connection ~ 7875 3275
+	7500 3400 7500 3700
+Connection ~ 7500 3400
 $Comp
 L Device:R R5
 U 1 1 5EC1817A
-P 7725 3275
-F 0 "R5" V 7518 3275 50  0000 C CNN
-F 1 "10K" V 7609 3275 50  0000 C CNN
-F 2 "gaia_gate:resistor" V 7655 3275 50  0001 C CNN
-F 3 "~" H 7725 3275 50  0001 C CNN
-	1    7725 3275
+P 7350 3400
+F 0 "R5" V 7143 3400 50  0000 C CNN
+F 1 "10K" V 7234 3400 50  0000 C CNN
+F 2 "gaia_gate:resistor" V 7280 3400 50  0001 C CNN
+F 3 "~" H 7350 3400 50  0001 C CNN
+	1    7350 3400
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R4
 U 1 1 5EC15B9A
-P 7725 2775
-F 0 "R4" V 7518 2775 50  0000 C CNN
-F 1 "10K" V 7609 2775 50  0000 C CNN
-F 2 "gaia_gate:resistor" V 7655 2775 50  0001 C CNN
-F 3 "~" H 7725 2775 50  0001 C CNN
-	1    7725 2775
+P 7350 3100
+F 0 "R4" V 7143 3100 50  0000 C CNN
+F 1 "10K" V 7234 3100 50  0000 C CNN
+F 2 "gaia_gate:resistor" V 7280 3100 50  0001 C CNN
+F 3 "~" H 7350 3100 50  0001 C CNN
+	1    7350 3100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6775 3775 6775 3700
-Wire Wire Line
-	6775 3475 6775 3425
-Connection ~ 6775 3425
-Wire Wire Line
-	6775 3425 6275 3425
-Wire Wire Line
-	7575 2775 6775 2775
-Wire Wire Line
-	6775 2775 6775 3075
-Wire Wire Line
-	6900 3075 6775 3075
-Wire Wire Line
-	6775 3075 6525 3075
-Connection ~ 6775 3075
-Wire Wire Line
-	6600 3600 6600 3275
-Wire Wire Line
-	6600 3275 6900 3275
 $Comp
 L power:GND #PWR08
 U 1 1 5EC33B48
-P 7875 3275
-F 0 "#PWR08" H 7875 3025 50  0001 C CNN
-F 1 "GND" V 7880 3147 50  0000 R CNN
-F 2 "" H 7875 3275 50  0001 C CNN
-F 3 "" H 7875 3275 50  0001 C CNN
-	1    7875 3275
+P 7500 3400
+F 0 "#PWR08" H 7500 3150 50  0001 C CNN
+F 1 "GND" V 7505 3272 50  0000 R CNN
+F 2 "" H 7500 3400 50  0001 C CNN
+F 3 "" H 7500 3400 50  0001 C CNN
+	1    7500 3400
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6775 3775 7575 3775
-Wire Wire Line
-	7575 3475 7575 3275
-Wire Wire Line
-	6775 3475 7575 3475
-Wire Wire Line
-	6900 3700 6775 3700
-Wire Wire Line
-	6900 3600 6600 3600
-$Comp
-L Connector_Generic:Conn_01x02 J6
-U 1 1 5EC1235A
-P 7100 3600
-F 0 "J6" H 7200 3600 50  0000 C CNN
-F 1 "Switch3" H 7300 3500 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical" H 7100 3600 50  0001 C CNN
-F 3 "~" H 7100 3600 50  0001 C CNN
-	1    7100 3600
-	1    0    0    -1  
-$EndComp
-Connection ~ 6775 3700
-Wire Wire Line
-	6775 3700 6525 3700
 $Comp
 L power:+5V #PWR06
 U 1 1 5EC594E2
-P 6600 2675
-F 0 "#PWR06" H 6600 2525 50  0001 C CNN
-F 1 "+5V" H 6615 2848 50  0000 C CNN
-F 2 "" H 6600 2675 50  0001 C CNN
-F 3 "" H 6600 2675 50  0001 C CNN
-	1    6600 2675
-	1    0    0    -1  
+P 6400 2400
+F 0 "#PWR06" H 6400 2250 50  0001 C CNN
+F 1 "+5V" H 6415 2573 50  0000 C CNN
+F 2 "" H 6400 2400 50  0001 C CNN
+F 3 "" H 6400 2400 50  0001 C CNN
+	1    6400 2400
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6600 2675 6600 2975
-Connection ~ 6600 3275
-Wire Wire Line
-	6900 2975 6600 2975
-Connection ~ 6600 2975
-Wire Wire Line
-	6600 2975 6600 3275
 Wire Wire Line
 	1725 5475 1900 5475
 Wire Wire Line
@@ -248,17 +162,6 @@ F 3 "~" H 3850 3175 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R2
-U 1 1 5EC70E18
-P 3850 3375
-F 0 "R2" V 3800 3525 50  0000 C CNN
-F 1 "330E" V 3925 3375 50  0000 C CNN
-F 2 "gaia_gate:resistor" V 3780 3375 50  0001 C CNN
-F 3 "~" H 3850 3375 50  0001 C CNN
-	1    3850 3375
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R3
 U 1 1 5EC71A9A
 P 3850 3575
@@ -287,14 +190,6 @@ F 3 "" H 3525 3375 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3525 3375 3700 3375
-Wire Wire Line
-	4900 3575 4900 3825
-Wire Wire Line
-	4900 3825 5375 3825
-Wire Wire Line
-	4975 3725 5375 3725
-Wire Wire Line
-	5100 3625 5375 3625
 Wire Wire Line
 	6625 3925 6275 3925
 Wire Wire Line
@@ -363,7 +258,7 @@ L Device:CP1 C1
 U 1 1 5ECBDB7D
 P 3600 5625
 F 0 "C1" H 3715 5671 50  0000 L CNN
-F 1 "CP1" H 3715 5580 50  0000 L CNN
+F 1 "10uF" H 3715 5580 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 3600 5625 50  0001 C CNN
 F 3 "~" H 3600 5625 50  0001 C CNN
 	1    3600 5625
@@ -388,56 +283,107 @@ Wire Wire Line
 Wire Wire Line
 	5250 4225 5375 4225
 $Comp
-L Connector_Generic:Conn_01x02 J8
-U 1 1 5ED2BA5B
-P 4400 2625
-F 0 "J8" H 4500 2650 50  0000 C CNN
-F 1 "LED1" V 4400 2375 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical" H 4400 2625 50  0001 C CNN
-F 3 "~" H 4400 2625 50  0001 C CNN
-	1    4400 2625
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J7
-U 1 1 5ED3F660
-P 4375 3150
-F 0 "J7" H 4475 3175 50  0000 C CNN
-F 1 "LED2" V 4375 2900 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical" H 4375 3150 50  0001 C CNN
-F 3 "~" H 4375 3150 50  0001 C CNN
-	1    4375 3150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4400 2825 4000 2825
-Wire Wire Line
-	4000 2825 4000 3175
-Wire Wire Line
-	4500 2825 5100 2825
-Wire Wire Line
-	5100 2825 5100 3625
-Wire Wire Line
-	4475 3350 4975 3350
-Wire Wire Line
-	4975 3350 4975 3725
-Wire Wire Line
-	4375 3350 4000 3350
-Wire Wire Line
-	4000 3350 4000 3375
-Wire Wire Line
-	4000 3575 4425 3575
-Wire Wire Line
-	4525 3575 4900 3575
-$Comp
-L Connector_Generic:Conn_01x02 J9
-U 1 1 5ED2D75F
-P 4525 3775
-F 0 "J9" H 4625 3800 50  0000 C CNN
-F 1 "LED3" V 4525 3500 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical" H 4525 3775 50  0001 C CNN
-F 3 "~" H 4525 3775 50  0001 C CNN
-	1    4525 3775
+L Device:R R2
+U 1 1 5EC70E18
+P 3850 3375
+F 0 "R2" V 3800 3525 50  0000 C CNN
+F 1 "330E" V 3925 3375 50  0000 C CNN
+F 2 "gaia_gate:resistor" V 3780 3375 50  0001 C CNN
+F 3 "~" H 3850 3375 50  0001 C CNN
+	1    3850 3375
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J4
+U 1 1 5EBE5F61
+P 4400 2875
+F 0 "J4" V 4364 2487 50  0000 R CNN
+F 1 "LED_ARRAY" V 4273 2487 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical" H 4400 2875 50  0001 C CNN
+F 3 "~" H 4400 2875 50  0001 C CNN
+	1    4400 2875
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 3075 4000 3075
+Wire Wire Line
+	4000 3075 4000 3175
+Wire Wire Line
+	4300 3075 4300 3625
+Wire Wire Line
+	4300 3625 5375 3625
+Wire Wire Line
+	4400 3075 4400 3375
+Wire Wire Line
+	4400 3375 4000 3375
+Wire Wire Line
+	4600 3075 4600 3575
+Wire Wire Line
+	4600 3575 4000 3575
+Wire Wire Line
+	4500 3075 4500 3725
+Wire Wire Line
+	4500 3725 5375 3725
+Wire Wire Line
+	4700 3075 4700 3825
+Wire Wire Line
+	4700 3825 5375 3825
+$Comp
+L Connector_Generic:Conn_01x06 J5
+U 1 1 5EBFD871
+P 6825 2200
+F 0 "J5" V 6789 1812 50  0000 R CNN
+F 1 "SWITCH_ARRAY" V 6698 1812 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical" H 6825 2200 50  0001 C CNN
+F 3 "~" H 6825 2200 50  0001 C CNN
+	1    6825 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 3700 7125 3700
+Wire Wire Line
+	6600 3525 6275 3525
+Wire Wire Line
+	6600 3525 6600 3700
+Wire Wire Line
+	7200 3400 6925 3400
+Wire Wire Line
+	6600 3400 6600 3425
+Wire Wire Line
+	6600 3425 6275 3425
+Wire Wire Line
+	7200 3100 6725 3100
+Wire Wire Line
+	6575 3100 6575 3325
+Wire Wire Line
+	6575 3325 6275 3325
+Wire Wire Line
+	6725 2400 6725 3100
+Connection ~ 6725 3100
+Wire Wire Line
+	6725 3100 6575 3100
+Wire Wire Line
+	6925 2400 6925 3400
+Connection ~ 6925 3400
+Wire Wire Line
+	6925 3400 6600 3400
+Wire Wire Line
+	7125 2400 7125 3700
+Connection ~ 7125 3700
+Wire Wire Line
+	7125 3700 6600 3700
+Wire Wire Line
+	6400 2400 6625 2400
+Wire Wire Line
+	6825 2400 6825 2525
+Wire Wire Line
+	6825 2525 6625 2525
+Wire Wire Line
+	6625 2525 6625 2400
+Connection ~ 6625 2400
+Wire Wire Line
+	6825 2525 7025 2525
+Wire Wire Line
+	7025 2525 7025 2400
+Connection ~ 6825 2525
 $EndSCHEMATC

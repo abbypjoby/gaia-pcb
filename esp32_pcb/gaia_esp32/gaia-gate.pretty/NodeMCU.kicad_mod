@@ -1,4 +1,4 @@
-(module NodeMCU (layer F.Cu) (tedit 5A22F9CB)
+(module NodeMCU (layer F.Cu) (tedit 5EDB2334)
   (descr "Through-hole-mounted NodeMCU 0.9")
   (tags nodemcu)
   (fp_text reference U** (at 11.43 12.68) (layer F.SilkS)
@@ -56,7 +56,6 @@
   (pad 27 thru_hole oval (at 22.86 7.62) (size 2.032 1.7272) (drill 1.016) (layers *.Cu *.Mask F.SilkS))
   (pad 29 thru_hole oval (at 22.86 2.54) (size 2.032 1.7272) (drill 1.016) (layers *.Cu *.Mask F.SilkS))
   (pad "" np_thru_hole circle (at 0.8 39.38) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
-  (pad "" np_thru_hole circle (at 22 39.38) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at 22 -4.25) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at 0.75 -4.25) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
 )
