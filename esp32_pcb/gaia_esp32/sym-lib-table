@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name nodeMCU)(type Legacy)(uri /home/abby/Projects/gate/gaia-pcb_v2/esp32_pcb/library/kicad-lib/nodemcu.lib)(options "")(descr ""))
+  (lib (name gaia_gate)(type Legacy)(uri /home/abby/Projects/gate/gaia-pcb_v2/gaia-gate-cache.lib)(options "")(descr ""))
+  (lib (name gaia_esp32-rescue)(type Legacy)(uri ${KIPRJMOD}/gaia_esp32-rescue.lib)(options "")(descr ""))
+)

@@ -1,4 +1,4 @@
-update=Tue May 12 15:24:58 2020
+update=Thu May 14 15:58:13 2020
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=gaia-gate.net
+LastNetListRead=gaia_esp32.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -39,15 +39,10 @@ MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.25
-TrackWidth2=0.5
-TrackWidth3=1
-TrackWidth4=1.5
-TrackWidth5=2.5
-TrackWidth6=3
+TrackWidth2=1.5
+TrackWidth3=3
 ViaDiameter1=0.8
 ViaDrill1=0.4
-ViaDiameter2=2
-ViaDrill2=0.8
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25

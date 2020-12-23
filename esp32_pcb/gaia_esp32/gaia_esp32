@@ -1,0 +1,81 @@
+!PADS-POWERPCB-V2.0-MILS!
+*PART*
+ U2 gaia-gate:NodeMCU
+ U1 gaia_gate:230_5V_supply_HiLink
+ J1 Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical
+ J2 Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical
+ J3 Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical
+ R6 gaia_gate:resistor
+ R5 gaia_gate:resistor
+ R4 gaia_gate:resistor
+ R1 gaia_gate:resistor
+ R3 gaia_gate:resistor
+ C1 Capacitor_THT:CP_Radial_D8.0mm_P5.00mm
+ R2 gaia_gate:resistor
+ J4 Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical
+ J5 Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical
+
+*NET*
+*SIGNAL* Net-(J4-Pad3)
+ J4.3
+ R2.1
+*SIGNAL* Net-(J4-Pad1)
+ J4.1
+ R1.1
+*SIGNAL* Net-(J4-Pad2)
+ U2.8
+ J4.2
+*SIGNAL* Net-(J4-Pad4)
+ U2.9
+ J4.4
+*SIGNAL* Net-(J4-Pad5)
+ R3.1
+ J4.5
+*SIGNAL* Net-(J4-Pad6)
+ U2.10
+ J4.6
+*SIGNAL* GND
+ R1.2
+ R4.1
+ R5.1
+ U1.4
+ U2.14
+ R3.2
+ J3.3
+ R6.1
+ R2.2
+ C1.2
+*SIGNAL* +5V
+ U2.15
+ U1.3
+ C1.1
+ J5.3
+ J5.1
+ J5.5
+*SIGNAL* Net-(J5-Pad2)
+ U2.26
+ R4.2
+ J5.2
+*SIGNAL* Net-(J5-Pad4)
+ R5.2
+ U2.25
+ J5.4
+*SIGNAL* Net-(J3-Pad2)
+ J3.2
+ U2.19
+*SIGNAL* Net-(J5-Pad6)
+ J5.6
+ U2.24
+ R6.2
+*SIGNAL* Net-(J1-Pad1)
+ U1.2
+ J1.1
+ J2.1
+*SIGNAL* Net-(J3-Pad1)
+ U2.20
+ J3.1
+*SIGNAL* Net-(J1-Pad2)
+ U1.1
+ J1.2
+ J2.2
+*END*
