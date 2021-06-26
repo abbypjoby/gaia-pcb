@@ -1,0 +1,330 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 5FE6C0DF
+P 4950 2875
+F 0 "K?" H 5380 2921 50  0000 L CNN
+F 1 "SANYOU_SRD_Form_C" H 5380 2830 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 5400 2825 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 4950 2875 50  0001 C CNN
+	1    4950 2875
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D?
+U 1 1 5FE6C0E5
+P 5850 2925
+F 0 "D?" V 5804 3004 50  0000 L CNN
+F 1 "1N4007" V 5895 3004 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5850 2750 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5850 2925 50  0001 C CNN
+	1    5850 2925
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5150 3175 5850 3175
+Wire Wire Line
+	5850 3175 5850 3075
+Wire Wire Line
+	5150 2575 5850 2575
+Wire Wire Line
+	5850 2575 5850 2775
+$Comp
+L power:+5V #PWR?
+U 1 1 5FE6C0EF
+P 5850 2575
+F 0 "#PWR?" H 5850 2425 50  0001 C CNN
+F 1 "+5V" H 5865 2748 50  0000 C CNN
+F 2 "" H 5850 2575 50  0001 C CNN
+F 3 "" H 5850 2575 50  0001 C CNN
+	1    5850 2575
+	1    0    0    -1  
+$EndComp
+Connection ~ 6325 2375
+Wire Wire Line
+	6325 2175 6325 2375
+Text GLabel 6300 2175 0    50   Input ~ 0
+Relay1_IN
+Wire Wire Line
+	7175 2825 7175 2375
+Connection ~ 7175 2825
+Wire Wire Line
+	7225 2825 7175 2825
+$Comp
+L power:GND #PWR?
+U 1 1 5FE6C0FB
+P 7225 2825
+F 0 "#PWR?" H 7225 2575 50  0001 C CNN
+F 1 "GND" H 7230 2652 50  0000 C CNN
+F 2 "" H 7225 2825 50  0001 C CNN
+F 3 "" H 7225 2825 50  0001 C CNN
+	1    7225 2825
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7175 3175 7175 2825
+Wire Wire Line
+	6525 3175 7175 3175
+Wire Wire Line
+	6325 2375 6325 2425
+Wire Wire Line
+	6475 2375 6325 2375
+Wire Wire Line
+	6325 2725 6325 2875
+Wire Wire Line
+	6775 2375 6875 2375
+$Comp
+L Device:R R?
+U 1 1 5FE6C107
+P 6625 2375
+F 0 "R?" H 6695 2421 50  0000 L CNN
+F 1 "330Ω" H 6695 2330 50  0000 L CNN
+F 2 "gaia-gate:resistor" V 6555 2375 50  0001 C CNN
+F 3 "~" H 6625 2375 50  0001 C CNN
+	1    6625 2375
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FE6C10D
+P 7025 2375
+F 0 "D?" V 7064 2258 50  0000 R CNN
+F 1 "GREEN" V 6973 2258 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 7025 2375 50  0001 C CNN
+F 3 "~" H 7025 2375 50  0001 C CNN
+	1    7025 2375
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 5FE6C113
+P 6325 3075
+F 0 "Q?" H 6516 3029 50  0000 L CNN
+F 1 "BC547" H 6516 3120 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 6525 3000 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 6325 3075 50  0001 L CNN
+	1    6325 3075
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FE6C119
+P 6325 2575
+F 0 "R?" V 6532 2575 50  0000 C CNN
+F 1 "1K" V 6441 2575 50  0000 C CNN
+F 2 "gaia-gate:resistor" V 6255 2575 50  0001 C CNN
+F 3 "~" H 6325 2575 50  0001 C CNN
+	1    6325 2575
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6325 2175 6300 2175
+Wire Wire Line
+	5850 3175 6125 3175
+Connection ~ 5850 3175
+$Comp
+L Relay:SANYOU_SRD_Form_C K?
+U 1 1 5FE6C122
+P 4975 4625
+F 0 "K?" H 5405 4671 50  0000 L CNN
+F 1 "SANYOU_SRD_Form_C" H 5405 4580 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 5425 4575 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 4975 4625 50  0001 C CNN
+	1    4975 4625
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D?
+U 1 1 5FE6C128
+P 5875 4675
+F 0 "D?" V 5829 4754 50  0000 L CNN
+F 1 "1N4007" V 5920 4754 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5875 4500 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5875 4675 50  0001 C CNN
+	1    5875 4675
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5175 4925 5875 4925
+Wire Wire Line
+	5875 4925 5875 4825
+Wire Wire Line
+	5175 4325 5875 4325
+Wire Wire Line
+	5875 4325 5875 4525
+$Comp
+L power:+5V #PWR?
+U 1 1 5FE6C132
+P 5875 4325
+F 0 "#PWR?" H 5875 4175 50  0001 C CNN
+F 1 "+5V" H 5890 4498 50  0000 C CNN
+F 2 "" H 5875 4325 50  0001 C CNN
+F 3 "" H 5875 4325 50  0001 C CNN
+	1    5875 4325
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 4125
+Wire Wire Line
+	6350 3925 6350 4125
+Text GLabel 6325 3925 0    50   Input ~ 0
+Relay2_IN
+Wire Wire Line
+	7200 4575 7200 4125
+Connection ~ 7200 4575
+Wire Wire Line
+	7250 4575 7200 4575
+$Comp
+L power:GND #PWR?
+U 1 1 5FE6C13E
+P 7250 4575
+F 0 "#PWR?" H 7250 4325 50  0001 C CNN
+F 1 "GND" H 7255 4402 50  0000 C CNN
+F 2 "" H 7250 4575 50  0001 C CNN
+F 3 "" H 7250 4575 50  0001 C CNN
+	1    7250 4575
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 4925 7200 4575
+Wire Wire Line
+	6550 4925 7200 4925
+Wire Wire Line
+	6350 4125 6350 4175
+Wire Wire Line
+	6500 4125 6350 4125
+Wire Wire Line
+	6350 4475 6350 4625
+Wire Wire Line
+	6800 4125 6900 4125
+$Comp
+L Device:R R?
+U 1 1 5FE6C14A
+P 6650 4125
+F 0 "R?" H 6720 4171 50  0000 L CNN
+F 1 "330Ω" H 6720 4080 50  0000 L CNN
+F 2 "gaia-gate:resistor" V 6580 4125 50  0001 C CNN
+F 3 "~" H 6650 4125 50  0001 C CNN
+	1    6650 4125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FE6C150
+P 7050 4125
+F 0 "D?" V 7089 4008 50  0000 R CNN
+F 1 "GREEN" V 6998 4008 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 7050 4125 50  0001 C CNN
+F 3 "~" H 7050 4125 50  0001 C CNN
+	1    7050 4125
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 5FE6C156
+P 6350 4825
+F 0 "Q?" H 6541 4779 50  0000 L CNN
+F 1 "BC547" H 6541 4870 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 6550 4750 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 6350 4825 50  0001 L CNN
+	1    6350 4825
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FE6C15C
+P 6350 4325
+F 0 "R?" V 6557 4325 50  0000 C CNN
+F 1 "1K" V 6466 4325 50  0000 C CNN
+F 2 "gaia-gate:resistor" V 6280 4325 50  0001 C CNN
+F 3 "~" H 6350 4325 50  0001 C CNN
+	1    6350 4325
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 3925 6325 3925
+Wire Wire Line
+	5875 4925 6150 4925
+Connection ~ 5875 4925
+$Comp
+L power:AC #PWR?
+U 1 1 5FE6C165
+P 4825 3350
+F 0 "#PWR?" H 4825 3250 50  0001 C CNN
+F 1 "AC" V 4825 3580 50  0000 L CNN
+F 2 "" H 4825 3350 50  0001 C CNN
+F 3 "" H 4825 3350 50  0001 C CNN
+	1    4825 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4825 3350 4750 3350
+Wire Wire Line
+	4750 3350 4750 3175
+$Comp
+L power:AC #PWR?
+U 1 1 5FE6C16D
+P 4800 5100
+F 0 "#PWR?" H 4800 5000 50  0001 C CNN
+F 1 "AC" V 4800 5330 50  0000 L CNN
+F 2 "" H 4800 5100 50  0001 C CNN
+F 3 "" H 4800 5100 50  0001 C CNN
+	1    4800 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 5100 4775 5100
+Wire Wire Line
+	4775 5100 4775 4925
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 5FE6C175
+P 4050 3750
+F 0 "J?" H 4158 4031 50  0000 C CNN
+F 1 "motor" H 4158 3940 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-396_A-41791-0003_1x03_P3.96mm_Vertical" H 4050 3750 50  0001 C CNN
+F 3 "~" H 4050 3750 50  0001 C CNN
+	1    4050 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2575 4250 2575
+Wire Wire Line
+	4250 2575 4250 3650
+Wire Wire Line
+	4675 4325 4250 4325
+Wire Wire Line
+	4250 4325 4250 3850
+$Comp
+L Device:Fuse F?
+U 1 1 5FE6C17F
+P 4525 3750
+F 0 "F?" V 4328 3750 50  0000 C CNN
+F 1 "Fuse" V 4419 3750 50  0000 C CNN
+F 2 "gaia-gate:Fuse" V 4455 3750 50  0001 C CNN
+F 3 "~" H 4525 3750 50  0001 C CNN
+	1    4525 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4375 3750 4250 3750
+Connection ~ 5850 2575
+Connection ~ 5875 4325
+Text GLabel 5000 3750 2    50   Input ~ 0
+CT_OUT
+Wire Wire Line
+	4675 3750 5000 3750
+$EndSCHEMATC

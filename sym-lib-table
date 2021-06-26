@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name gaia-gate-rescue)(type Legacy)(uri ${KIPRJMOD}/gaia-gate-rescue.lib)(options "")(descr ""))
+)

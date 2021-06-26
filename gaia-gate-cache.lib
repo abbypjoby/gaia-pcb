@@ -207,9 +207,9 @@ $FPLIST
  LED_THT:*
 $ENDFPLIST
 DRAW
-P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 10 -50 -50 -50 50 N
 P 2 0 1 0 -50 0 50 0 N
-P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
 P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
 P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
 X K 1 -150 0 100 R 50 50 1 1 P
@@ -286,9 +286,9 @@ $FPLIST
  D*DO?41*
 $ENDFPLIST
 DRAW
-P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 10 -50 50 -50 -50 N
 P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
@@ -395,11 +395,11 @@ X E 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# gaia_library_Current_Transformer
+# gaia-gate-rescue_Current_Transformer-gaia_library
 #
-DEF gaia_library_Current_Transformer U 0 40 Y Y 1 F N
+DEF gaia-gate-rescue_Current_Transformer-gaia_library U 0 40 Y Y 1 F N
 F0 "U" 0 425 50 H V C CNN
-F1 "gaia_library_Current_Transformer" 25 -225 50 H V C CNN
+F1 "gaia-gate-rescue_Current_Transformer-gaia_library" 25 -225 50 H V C CNN
 F2 "" -150 0 50 H I C CNN
 F3 "" -150 0 50 H I C CNN
 DRAW
@@ -411,11 +411,11 @@ X Input_Current 4 700 200 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# pcb_power_supply_Vcc_one_supply
+# gaia-gate-rescue_Vcc_one_supply-pcb_power_supply
 #
-DEF pcb_power_supply_Vcc_one_supply U 0 40 Y Y 1 F N
+DEF gaia-gate-rescue_Vcc_one_supply-pcb_power_supply U 0 40 Y Y 1 F N
 F0 "U" 100 400 50 H V C CNN
-F1 "pcb_power_supply_Vcc_one_supply" 150 300 50 H V C CNN
+F1 "gaia-gate-rescue_Vcc_one_supply-pcb_power_supply" 150 300 50 H V C CNN
 F2 "" 100 400 50 H I C CNN
 F3 "" 100 400 50 H I C CNN
 DRAW
@@ -479,8 +479,9 @@ F1 "power_NEUT" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-C 0 75 25 0 1 0 N
-P 2 0 1 0 0 0 0 50 N
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
 X NEUT 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
